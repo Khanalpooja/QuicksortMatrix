@@ -46,10 +46,17 @@ public class Algorithms_Analysis_proj1 {
 //                System.out.println("");
 
             try{
-                            quickSort quick = new quickSort();
-                            int[] myNum = {3, 200, 30, 4};
-                            System.out.println(Arrays.toString(myNum));
-                            quick.QuickSort_main(myNum,0,3);
+                    quickSort quick = new quickSort();
+                    int[][] myNum = {{3, 200, 30, 4},{2,3,4,5}};
+                    for(int row = 0; row < myNum.length; row++){
+                        quick.QuickSortMethod2(myNum,0,myNum[0].length-1,row, true);
+                    }
+                    for(int col = 0; col < myNum[0].length; col++){
+                        quick.QuickSortMethod2(myNum,0,myNum.length-1,col, false);
+                    }
+                    for(int[] arr: myNum) {
+                        System.out.println(Arrays.toString(arr));
+                    }
             }
             catch ( IOException ioException){}
             //	        	x=x+1;
