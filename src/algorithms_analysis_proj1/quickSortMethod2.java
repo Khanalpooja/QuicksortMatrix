@@ -9,21 +9,21 @@ import java.io.IOException;
  */
 public class quickSortMethod2 {
     
-    public static void swapRow (int Array[][], int i, int j, int row) 
+    public static void swapRow (double Array[][], int i, int j, int row) 
     {
         mainClass.Assign(Array[row][i]);
         mainClass.Assign(Array, row, i, Array[row][j]);
         mainClass.Assign(Array, row, j, mainClass.temp);
     }
     
-    public static void swapCol (int Array[][], int i, int j, int col) 
+    public static void swapCol (double Array[][], int i, int j, int col) 
     {
         mainClass.Assign(Array[i][col]);
         mainClass.Assign(Array, i, col, Array[j][col]);
         mainClass.Assign(Array, j, col, mainClass.temp);
     }
     
-    public static int PartitionRows( int Array[][], int left , int right, int row) throws IOException// pivot: first  element
+    public static int PartitionRows( double Array[][], int left , int right, int row) throws IOException// pivot: first  element
     {
         int i,j =0; 
         i = left + 1; 
@@ -52,7 +52,7 @@ public class quickSortMethod2 {
         return j;
     }
     
-    public static int PartitionCols( int Array[][], int left , int right, int col) throws IOException// pivot: first  element
+    public static int PartitionCols(double Array[][], int left , int right, int col) throws IOException// pivot: first  element
     {
         int i,j =0; 
 
@@ -81,7 +81,7 @@ public class quickSortMethod2 {
         return j;
     }
     
-    public static int[][] QuickSortMethod2( int Array[][], int left /*= 1*/, int right /*= n*/, int rc, boolean row) throws IOException
+    public static double[][] QuickSortMethod2( double Array[][], int left /*= 1*/, int right /*= n*/, int rc, boolean row) throws IOException
     {
            int pivot;
            if(left < right)

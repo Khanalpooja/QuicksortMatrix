@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class quickSortMethod1 {
     
-    public static void swapMethod1 (int Array[][], int i, int j, int noOfCol) 
+    public static void swapMethod1 (double Array[][], int i, int j, int noOfCol) 
     {
         int i_row = i / noOfCol;
         int i_col = i % noOfCol;
@@ -19,7 +19,7 @@ public class quickSortMethod1 {
         mainClass.Assign(Array, i_row, i_col, Array[j_row][j_col]);
         mainClass.Assign(Array, j_row, j_col, mainClass.temp);
     }
-    public static int PartitionMethod1( int Array[][], int left , int right, int noOfCol ) throws IOException// pivot: first  element
+    public static int PartitionMethod1( double Array[][], int left , int right, int noOfCol ) throws IOException// pivot: first  element
     {
      
         int i,j;
@@ -52,11 +52,9 @@ public class quickSortMethod1 {
         return j;
     }
     
-    public static int[][] QuickSortMethod1( int Array[][], int left /*= 1*/, int right /*= n*/, int noOfCol) throws IOException
+    public static double[][] QuickSortMethod1( double Array[][], int left /*= 1*/, int right /*= n*/, int noOfCol) throws IOException
     {
-        int pivot;
-
-        
+        int pivot;  
         if(left < right)
         {
             pivot = PartitionMethod1(Array, left , right, noOfCol);
