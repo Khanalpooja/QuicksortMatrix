@@ -62,10 +62,11 @@ public class mainClass {
         for(int row = 0; row < myArray1.length; row++){
          quick1.QuickSortMethod1(myArray1,0, myArray1.length , myArray1[0].length);
         }
-        System.out.println("The sorted Matrix from Method1 is:\n");
+        System.out.println("The sorted Matrix from Method1 is written in file pk0050_Method1.txt\n");
         for(double[] arr: myArray1) {
             System.out.println(Arrays.toString(arr));
         }
+        System.out.println("\n");
         System.out.println("Total Number of comparisions made for Method 1 is:\t"+ comparisonCount);
         System.out.println("Total Number of assignments made for Method 1 is:\t"+ assignmentCount +"\n");
     }
@@ -84,10 +85,12 @@ public class mainClass {
             quick2.QuickSortMethod2(myArray2,0,myArray2.length-1,col, false);
         }
         
-        System.out.println("The sorted Matrix from Method1 is:\n");
+        System.out.println("The sorted Matrix from Method2 is written in File pk0050_Method2.txt\n");
+        
         for(double[] arr: myArray2) {
             System.out.println(Arrays.toString(arr));
         }
+        System.out.println("\n");
         System.out.println("Total Number of comparisions made for Method 2 is:\t"+ comparisonCount);
         System.out.println("Total Number of assignments made for Method 2 is:\t"+ assignmentCount+ "\n");
     }
