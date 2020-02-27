@@ -55,6 +55,8 @@ public class quickSortMethod1 {
     public static int[][] QuickSortMethod1( int Array[][], int left /*= 1*/, int right /*= n*/, int noOfCol) throws IOException
     {
         int pivot;
+
+        
         if(left < right)
         {
             pivot = PartitionMethod1(Array, left , right, noOfCol);
@@ -63,4 +65,6 @@ public class quickSortMethod1 {
         }
         return Array;
     }
+    
+    
 }
